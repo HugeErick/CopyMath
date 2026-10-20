@@ -1,0 +1,100 @@
+# misc
+utils/dataset/
+utils/dataset*/
+utils/dataset*/*
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# ---------- Virtual environments ----------
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+# ---------- Secrets (NEVER commit these) ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.json
+credentials.json
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ---------- Datasets (too big for git) ----------
+data/
+datasets/
+*.csv
+*.parquet
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.zip
+*.tar
+*.tar.gz
+
+# ---------- Model weights / checkpoints ----------
+checkpoints/
+models/
+weights/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.bin
+*.h5
+
+# ---------- Training logs / experiment tracking ----------
+runs/
+logs/
+lightning_logs/
+tensorboard/
+wandb/
+mlruns/
+outputs/
+*.log
+
+# ---------- Caches ----------
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+htmlcov/
+.torch/
+.huggingface/
+
+# ---------- IDEs / editors ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---------- OS junk ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Keep these folders in the repo (optional) ----------
+# Add an empty .gitkeep inside a folder to track it, e.g. data/.gitkeep
+!data/.gitkeep
+!checkpoints/.gitkeep
